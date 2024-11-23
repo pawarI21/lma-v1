@@ -1,0 +1,8 @@
+#set( $PK = "c#${ctx.args.CallId}" )
+{
+  "version": "2018-05-29",
+  "operation": "GetItem",
+  "key": {
+    "PK": $util.dynamodb.toDynamoDBJson($PK),
+  },
+}

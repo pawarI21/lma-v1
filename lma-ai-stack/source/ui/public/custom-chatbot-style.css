@@ -1,0 +1,79 @@
+.application.theme--light {
+    background: transparent !important;
+}
+
+.message-button {
+    display: none;
+}
+
+nav.toolbar--fixed > .toolbar__content {
+    display: none;
+}
+
+.message-list-container {
+    top: 0px !important;
+    height: calc(100% - 48px) !important;
+}
+
+.content {
+    padding-top: 0px !important;
+}
+
+.toolbar.theme--dark {
+    background-color: #2b2b2b !important;
+}
+
+.message-human .message-bubble,
+.message-bot .message-bubble {
+    background-color: #f1f5f9 !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+}
+
+.message-bubble {
+    border-radius: 4px !important;
+    padding: 2px 18px !important;
+}
+
+.input-container .toolbar.white {
+    box-shadow: none !important;
+}
+
+.input-container .toolbar.white .toolbar__content {
+    box-shadow: none !important;
+    border-top: 1px solid rgb(226, 232, 240);
+}
+.input-container .toolbar.white .toolbar__content .input-group label {
+    font-size: 14px !important;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji" !important;
+}
+.input-container .toolbar.white .toolbar__content .input-group input {
+    font-size: 14px !important;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji" !important;
+}
+.input-container .toolbar.white .toolbar__content .input-group .input-group__details::before {
+    background-color: rgb(241 245 249) !important;
+}
+.btn__content {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    background-color: rgb(241 245 249);
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    column-gap: 0.375rem;
+    align-items: center;
+    display: inline-flex;
+}
+.card__actions .secondary--text.accent.btn:not(.btn--depressed) {
+    box-shadow: none !important;
+    background-color: none !important;
+    border-color: none !important;
+    height: auto !important;
+}

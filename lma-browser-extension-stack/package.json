@@ -1,0 +1,85 @@
+{
+	"name": "lma-extension",
+	"version": "0.2.6",
+	"private": true,
+	"dependencies": {
+		"@cloudscape-design/components": "^3.0.540",
+		"@cloudscape-design/global-styles": "^1.0.23",
+		"@hookform/resolvers": "^3.9.1",
+		"@radix-ui/react-alert-dialog": "^1.1.2",
+		"@radix-ui/react-avatar": "^1.1.1",
+		"@radix-ui/react-label": "^2.1.0",
+		"@radix-ui/react-slot": "^1.1.0",
+		"@radix-ui/react-tabs": "^1.1.1",
+		"@radix-ui/react-toast": "^1.2.2",
+		"@radix-ui/react-tooltip": "^1.1.4",
+		"@testing-library/jest-dom": "^5.17.0",
+		"@testing-library/react": "^13.4.0",
+		"@testing-library/user-event": "^13.5.0",
+		"@types/jest": "^27.5.2",
+		"@types/node": "^16.18.82",
+		"@types/react": "^18.2.57",
+		"@types/react-dom": "^18.2.19",
+		"aws-amplify": "^6.8.2",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.1",
+		"graphql-tag": "^2.12.6",
+		"lodash": "^4.17.21",
+		"lucide-react": "^0.460.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-hook-form": "^7.53.2",
+		"react-scripts": "5.0.1",
+		"react-use-websocket": "^4.7.0",
+		"tailwind-merge": "^2.5.4",
+		"tailwindcss-animate": "^1.0.7",
+		"typescript": "^4.9.5",
+		"web-vitals": "^2.1.4",
+		"zod": "^3.23.8"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"watch": "npm-watch"
+	},
+	"watch": {
+		"build": {
+			"patterns": [
+				"src"
+			],
+			"extensions": "js,jsx,ts,tsx",
+			"quiet": true,
+			"legacyWatch": true,
+			"delay": 2500
+		}
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@types/chrome": "^0.0.261",
+		"@types/lodash": "^4.17.13",
+		"eslint": "^8.57.0",
+		"eslint-plugin-react": "^7.34.1",
+		"npm-watch": "^0.13.0",
+		"tailwindcss": "^3.4.15",
+		"typescript-eslint": "^7.6.0"
+	}
+}
