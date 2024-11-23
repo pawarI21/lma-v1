@@ -121,6 +121,8 @@ function IntegrationProvider({ children }: any) {
 				setPlatform('Microsoft Teams');
 			} else if (newMetadata.baseUrl.includes('webex.com')) {
 				setPlatform('Cisco Webex');
+			} else if (newMetadata && newMetadata.baseUrl && newMetadata.baseUrl === 'https://meet.google.com') {
+				setPlatform('Google Meet');
 			}
 			setMetadata(newMetadata);
 		},
