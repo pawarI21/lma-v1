@@ -1246,7 +1246,7 @@ Resources:
             - ValidateParameters
         Properties:
             # yamllint disable rule:line-length
-            TemplateURL: https://s3.us-east-1.amazonaws.com/aws-ml-blog-us-east-1/artifacts/lma/0.2.6/aws-qnabot/templates/qnabot-main.json
+            TemplateURL: https://s3.<REGION_TOKEN>.amazonaws.com/<ARTIFACT_BUCKET_TOKEN>/<ARTIFACT_PREFIX_TOKEN>/aws-qnabot/templates/qnabot-main.json
             # yamllint enable rule:line-length
             Parameters:
                 Email: !Ref AdminEmail
@@ -1268,7 +1268,7 @@ Resources:
             - IsStacknameLengthOK
             - ValidateParameters
         Properties:
-            TemplateURL: https://s3.us-east-1.amazonaws.com/aws-ml-blog-us-east-1/artifacts/lma/0.2.6/lma-llm-template-setup-stack/llm-template-setup.yaml
+            TemplateURL: https://s3.<REGION_TOKEN>.amazonaws.com/<ARTIFACT_BUCKET_TOKEN>/<ARTIFACT_PREFIX_TOKEN>/lma-llm-template-setup-stack/llm-template-setup.yaml
             Parameters:
                 Domain: !Ref Domain
                 CloudWatchLogsExpirationInDays: !Ref CloudWatchLogsExpirationInDays
