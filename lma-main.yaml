@@ -139,7 +139,6 @@ Parameters:
 
     IDCApplicationARN:
         Type: String
-        Default: ''
         Description: >-
             After creating an Identity Center customer managed application for QBusiness, UPDATE your stack with its ARN entered here. 
             See Q Business setup README for directions.
@@ -172,7 +171,6 @@ Parameters:
 
     S3BucketName:
         Type: String
-        Default: ''
         Description: >
             (Optional) Existing bucket where call recording files will be stored.
             Leave blank to automatically create new bucket.
@@ -399,7 +397,6 @@ Parameters:
 
     AdminEmail:
         Type: String
-        Default: 'ishwarpawar21@gmail.com'
         Description: >-
             Email address of the admin user (e.g. jdoe+admin@example.com) that has access to all meetings 
             for administrative purposes. 
@@ -459,11 +456,11 @@ Parameters:
         Type: Number
         Description: 'Whole number of days after which audio recordings will be deleted
             from the Recordings bucket.'
-        Default: 900
+        Default: 90
 
     MeetingRecordExpirationInDays:
         Type: Number
-        Default: 900
+        Default: 90
         Description: >-
             Number of days to retain meeting records. Meetings will be automatically deleted
             from LMA after this time.
@@ -471,7 +468,7 @@ Parameters:
 
     TranscriptionExpirationInDays:
         Type: Number
-        Default: 900
+        Default: 90
         Description: >-
             Number of days to retain turn by turn meeting transcriptions.  Transcriptions
             will be automatically deleted from LMA after this time.
@@ -518,7 +515,6 @@ Parameters:
 
     VPC:
         Type: String
-        Default: 'vpc-02529a70719b62850'
         Description: >-
             ID of the VPC to use for the solution. Required if UseExistingVPC is true. DO NOT CHANGE VALUE WHEN 
             UPDATING AN EXISTING STACK.
@@ -526,7 +522,6 @@ Parameters:
 
     PublicSubnet1:
         Type: String
-        Default: 'subnet-0ab0d8498eb4dc694'
         Description: >-
             ID of the public subnet in Availability Zone 1. Required if UseExistingVPC is
             true. DO NOT CHANGE VALUE WHEN UPDATING AN EXISTING STACK.
@@ -534,7 +529,6 @@ Parameters:
 
     PublicSubnet2:
         Type: String
-        Default: 'subnet-00c68470b6c6715b7'
         Description: >-
             ID of the public subnet in Availability Zone 2. Required if UseExistingVPC is
             true. DO NOT CHANGE VALUE WHEN UPDATING AN EXISTING STACK.
@@ -542,7 +536,6 @@ Parameters:
 
     PrivateSubnet1:
         Type: String
-        Default: 'subnet-0295759f9ebbb4c39'
         Description: >-
             ID of the private subnet in Availability Zone 1. Required if UseExistingVPC is
             true. DO NOT CHANGE VALUE WHEN UPDATING AN EXISTING STACK.
@@ -550,7 +543,6 @@ Parameters:
 
     PrivateSubnet2:
         Type: String
-        Default: 'subnet-0532b26d452623c26'
         Description: >-
             ID of the private subnet in Availability Zone 2. Required if UseExistingVPC is
             true. DO NOT CHANGE VALUE WHEN UPDATING AN EXISTING STACK.
